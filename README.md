@@ -8,6 +8,12 @@ Festicount is a Flutter application that showcases festival quotes. It allows us
 - **Quote Details**: Allows users to view detailed information about each quote.
 - **Navigation**: Users can navigate between different screens seamlessly.
 
+- 
+
+
+https://github.com/Limbasiyakrupali/festicount/assets/150001085/c18c4885-330f-4901-a4a7-f4e06f438eef
+
+
 - ![IMG-20240515-WA0008](https://github.com/Limbasiyakrupali/festicount/assets/150001085/692e5ec8-cab4-4aa0-a3ec-29571c1be727)
 - ![IMG-20240515-WA0014](https://github.com/Limbasiyakrupali/festicount/assets/150001085/8883db6a-98a9-4bae-ac46-e6f865242943)
 ![IMG-20240515-WA0015](https://github.com/Limbasiyakrupali/festicount/assets/150001085/af5a365e-6ba2-435d-88ac-cee1cabd44a5)
