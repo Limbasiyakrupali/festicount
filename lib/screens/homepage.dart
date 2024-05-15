@@ -40,29 +40,38 @@ class _homepageState extends State<homepage> {
         child: SingleChildScrollView(
           child: Column(
               children: Global.quote
-                  .map((e) => Container(
-                        height: 250,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              opacity: 0.5,
-                              colorFilter: ColorFilter.mode(
-                                Colors.black.withOpacity(0.6),
-                                BlendMode.colorDodge,
+                  .map((e) => Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: Container(
+                          height: 180,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                opacity: 0.8,
+                                colorFilter: ColorFilter.mode(
+                                  Colors.black.withOpacity(0.6),
+                                  BlendMode.colorDodge,
+                                ),
+                                image: NetworkImage(e.Thumbnail),
                               ),
-                              image: NetworkImage(e.Thumbnail),
-                            ),
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: <BoxShadow>[
-                              BoxShadow(
-                                color: Colors.grey.shade100,
-                                spreadRadius: 10,
-                                blurRadius: 5,
-                                offset: const Offset(0, 3),
-                              ),
-                            ]),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: <BoxShadow>[
+                                BoxShadow(
+                                  color: Colors.grey.shade100,
+                                  spreadRadius: 10,
+                                  blurRadius: 5,
+                                  offset: const Offset(0, 3),
+                                ),
+                              ]),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context)
+                                  .pushNamed("detailpage", arguments: e);
+                            },
+                          ),
+                        ),
                       ))
                   .toList()),
         ),
